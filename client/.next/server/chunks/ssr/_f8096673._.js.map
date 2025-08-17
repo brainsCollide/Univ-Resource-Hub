@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///Users/oz/Documents/Programming/Freelance/Univ%20Resource%20Hub/client/app/page.js"],"sourcesContent":["import Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className=\"container mx-auto bg-amber-600\">\n\n      <div className=\"flex flex-col items-center justify-center\">\n        <h1 className=\"text-4xl font-bold text-center text-white\">Welcome to the Next.js + Tailwind CSS Starter</h1>\n        <p className=\"text-lg text-center mt-4\">This is a starter template for Next.js and Tailwind CSS.</p>\n      </div>\n    \n      <div className=\"flex flex-col items-center justify-center mt-8\">\n        <Image src=\"/nextjs.svg\" alt=\"Next.js Logo\" width={200} height={100} />\n        <Image src=\"/tailwindcss.svg\" alt=\"Tailwind CSS Logo\" width={200} height={100} />\n      </div>\n      </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;0BAEb,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;wBAAG,WAAU;kCAA4C;;;;;;kCAC1D,8OAAC;wBAAE,WAAU;kCAA2B;;;;;;;;;;;;0BAG1C,8OAAC;gBAAI,WAAU;;kCACb,8OAAC,6HAAA,CAAA,UAAK;wBAAC,KAAI;wBAAc,KAAI;wBAAe,OAAO;wBAAK,QAAQ;;;;;;kCAChE,8OAAC,6HAAA,CAAA,UAAK;wBAAC,KAAI;wBAAmB,KAAI;wBAAoB,OAAO;wBAAK,QAAQ;;;;;;;;;;;;;;;;;;AAIlF","debugId":null}},
+    {"offset": {"line": 96, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
