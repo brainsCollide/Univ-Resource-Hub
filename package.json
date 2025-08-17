@@ -2,8 +2,8 @@
   "name": "fullstack-root",
   "private": true,
   "scripts": {
-    "build": "cd frontend && yarn && yarn build && cd ../backend && yarn",
-    "start": "concurrently \"cd backend && yarn dev\" \"cd frontend && yarn start\""
+    "build": "cd client && yarn && yarn build && cd ../server && yarn",
+    "start": "concurrently \"cd server && yarn dev\" \"cd client && yarn start\""
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
