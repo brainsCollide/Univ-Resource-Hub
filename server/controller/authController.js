@@ -24,21 +24,21 @@ const loginWithGoogle = async (req, res) => {
 
         let user = await User.findOne({ email });
 
-        if (!user) {
-            // Register new user if not found
-            const user = new User({
-            username: payload.name,
-            email: payload.email,
-            authProvider: "google", // custom field
-            role: "user",
-            });
-            await user.save();
-        }
+if (!user) {
+    // Register new user if not found
+    const user = new User({
+        username: payload.name,
+        email: payload.email,
+        authProvider: "google",
+        role: "user",
+    });
+    await user.save();
+}
 
-        // Generate token
-        const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, {
-            expiresIn: "1d"
-        });
+// later:
+const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, {
+    expiresIn: "1d"
+});
 
         res.cookie("token", token, {
             httpOnly: false,  // Set to true in production
