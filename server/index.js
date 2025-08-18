@@ -16,9 +16,11 @@ app.use(cookieParser());
 
 
 app.use(cors({
-    origin: "http://localhost:3000",  // Frontend URL
+    origin: process.env.FRONTEND_URL,  // Frontend URL
     credentials: true
 }));
+
+console.log("CORS enabled for:", process.env.FRONTEND_URL);
 
 // Also, set this header in responses:
 app.use((req, res, next) => {
