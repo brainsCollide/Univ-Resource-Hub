@@ -24,8 +24,11 @@ export default function GoogleLoginButton() {
     const idToken = response.credential;
 
     // Send ID token to your Express backend
-    const res = await fetch("http://localhost:4000/api/auth/google", {
-      method: "POST",
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/auth/google`, 
+      
+      {
+      method: "POST", 
       headers: {
         "Content-Type": "application/json",
       },
